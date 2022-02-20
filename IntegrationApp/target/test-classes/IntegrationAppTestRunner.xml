@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name ="IntegrationApp iOS Test Automation Script" parallel="false">
+
+    <parameter name="OS" value="iOS"/>
+    <parameter name="appType" value="phone"/>
+    <parameter name="deviceType" value="simulator"/>
+    <parameter name="deviceName" value="iPhone 11"/>
+    <parameter name="version" value="14.0"/>
+    <parameter name="moduleName" value="IntegrationApp"/>
+    <parameter name="appName" value="IntegrationApp.app"/>
+<!--    <parameter name="appName" value="Little_Caesars 2.app"/>-->
+    <parameter name="udid" value="BA5372F8-2BB3-49BF-B929-39AEE62DACD7"/>
+
+    <test name = "IntegrationApp Test">
+
+        <classes>
+            <class name="AlertTest" />
+            <class name="CalenderTest"/>
+        </classes>
+
+    </test>
+
+</suite>
+
